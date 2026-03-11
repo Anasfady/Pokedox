@@ -3,224 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Pokedox</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <ul class="background-pokeballs">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <nav id="pokemon-navbar">
       <div class="pokemon-logo">
-        <img src="Photos/logo.gif" />
+        <img src="Photos/logo.gif" alt="Logo" />
       </div>
     </nav>
+
     <main id="pokemon-main">
       <div id="search-container">
-        <input
-          type="text"
-          id="pokemon-search"
-          placeholder="Search by name or type..."
-          autocomplete="off"
-        />
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="pokemon-search"
+            placeholder="Search by name or type..."
+            autocomplete="off"
+          />
+        </div>
       </div>
-<div id="site-component">
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Bulbasaur.png" alt="Bulbasaur" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Bulbasaur</h2>
-        <div class="pokemon-types">
-          <span class="type grass">Grass</span>
-          <span class="type poison">Poison</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
 
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Charmander.png" alt="Charmander" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Charmander</h2>
-        <div class="pokemon-types">
-          <span class="type fire">Fire</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Caterpie.png" alt="Caterpie" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Caterpie</h2>
-        <div class="pokemon-types">
-          <span class="type bug">Bug</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Kakuna.png" alt="Kakuna" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Kakuna</h2>
-        <div class="pokemon-types">
-          <span class="type bug">Bug</span>
-          <span class="type poison">Poison</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Rattata.png" alt="Rattata" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Rattata</h2>
-        <div class="pokemon-types">
-          <span class="type normal">Normal</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Pikachu.png" alt="Pikachu" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Pikachu</h2>
-        <div class="pokemon-types">
-          <span class="type electric">Electric</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Vulpix.png" alt="Vulpix" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Vulpix</h2>
-        <div class="pokemon-types">
-          <span class="type fire">Fire</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Jigglypuff.png" alt="Jigglypuff" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Jigglypuff</h2>
-        <div class="pokemon-types">
-          <span class="type normal">Normal</span>
-          <span class="type fairy">Fairy</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Diglett.png" alt="Diglett" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Diglett</h2>
-        <div class="pokemon-types">
-          <span class="type ground">Ground</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Meowth.png" alt="Meowth" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Meowth</h2>
-        <div class="pokemon-types">
-          <span class="type normal">Normal</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-  
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Tentacool.png" alt="Tentacool" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Tentacool</h2>
-        <div class="pokemon-types">
-          <span class="type water">Water</span>
-          <span class="type poison">Poison</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Ponyta.png" alt="Ponyta" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Ponyta</h2>
-        <div class="pokemon-types">
-          <span class="type fire">Fire</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Cloyster.png" alt="Cloyster" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Cloyster</h2>
-        <div class="pokemon-types">
-          <span class="type water">Water</span>
-          <span class="type ice">Ice</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Cubone.png" alt="Cubone" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Cubone</h2>
-        <div class="pokemon-types">
-          <span class="type ground">Ground</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Eevee.png" alt="Eevee" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Eevee</h2>
-        <div class="pokemon-types">
-          <span class="type normal">Normal</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-
-  <article class="pokemon-card">
-    <figure class="pokemon-figure">
-      <img src="Images/Porygon.png" alt="Porygon" />
-      <figcaption class="pokemon-caption">
-        <h2 class="pokemon-name">Porygon</h2>
-        <div class="pokemon-types">
-          <span class="type normal">Normal</span>
-        </div>
-      </figcaption>
-    </figure>
-  </article>
-</div>
-      </div>
-      <script src="script.js"></script>
+      <div id="site-component"></div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
